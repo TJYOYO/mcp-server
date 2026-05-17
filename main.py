@@ -2,15 +2,14 @@ from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP()
 
-@mcp.tool()
-def writeEmail(date: str):
-    """
-    Writes an email to the user.
-    """
-    print(f"Email: Hi, all, I'll take a leave on {date}, if has any problem, please let me know. Thanks!")
 
-def main():
-    print("Hello from mcp-server!")
+@mcp.tool()
+def write_email(date: str) -> str:
+    """Generate a leave request email for the given date (YYYY-MM-DD)."""
+    return (
+        f"Hi, all, I'll take a leave on {date}. "
+        "If you have any questions, please let me know. Thanks!"
+    )
 
 
 if __name__ == "__main__":
