@@ -1,5 +1,9 @@
 # MCP 项目
 
+https://github.com/PrefectHQ/fastmcp 
+
+https://github.com/modelcontextprotocol/python-sdk?utm_source=chatgpt.com#overview 
+
 
 ## init evn
 
