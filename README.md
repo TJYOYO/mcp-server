@@ -1,9 +1,11 @@
 # MCP 项目
 
-https://github.com/PrefectHQ/fastmcp 
+A minimal [FastMCP](https://github.com/jlowin/fastmcp) server demo with example tools.
 
-https://github.com/modelcontextprotocol/python-sdk?utm_source=chatgpt.com#overview 
+## Requirements
 
+- Python 3.13+
+- [uv](https://docs.astral.sh/uv/)
 
 ## init evn
 
@@ -12,6 +14,8 @@ uv init .
 ```
 
 ## 安装 MCP SDK
+
+[MCP SDK](https://github.com/modelcontextprotocol/python-sdk?utm_source=chatgpt.com#overview) 是一个 Python 库，提供了与 MCP 服务器进行通信的接口。它允许开发者轻松地构建与 MCP 服务器交互的应用程序。
 
 ```bash
 uv add "mcp[cli]"
@@ -55,6 +59,6 @@ todo
 
 在mcp.json中，点击start 按钮，然后就可以在copilot中使用mcp-server了。
 
-## test
+## validation
 
 ![image](screenShot.png)
