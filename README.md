@@ -50,3 +50,11 @@ uv add "mcp[cli]"
 ## 添加到VS code for MAC
 
 todo
+
+## start server
+
+在mcp.json中，点击start 按钮，然后就可以在copilot中使用mcp-server了。
+
+## test
+
+![image](screenshot.png)
