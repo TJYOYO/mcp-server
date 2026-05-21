@@ -21,6 +21,28 @@ uv init .
 uv add "mcp[cli]"
 ```
 
+## 写MCP的具体实现
+
+1: 使用注解@mcp.tool()修饰，然后完成一个function 函数，like
+```code
+@mcp.tool()
+def generate_leave_email(date: str) -> str:
+    """Generate a leave request email for the given date (YYYY-MM-DD)."""
+    return (
+        f"Hi, all, I'll take a leave on {date}. "
+        "If you have any questions, please let me know. Thanks! Best regards, [Your Name]"
+    )
+```
+
+2: mcp启动方法
+```code
+
+if __name__ == "__main__":
+    mcp.run()
+
+```
+
+
 ## 添加到VS code for windows
 
 方式1： 在.vscode目录下创建mcp.json文件，并添加以下内容：
