@@ -108,4 +108,4 @@ like, another server config.
 
 ## validation
 
-![image](screenShot.png)
+![image](Screenshot2.png)
