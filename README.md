@@ -1,5 +1,9 @@
 # MCP 项目
 
+[MCP Official](https://github.com/modelcontextprotocol) 
+
+[Python SDK](https://github.com/modelcontextprotocol/python-sdk)
+
 A minimal [FastMCP](https://github.com/jlowin/fastmcp) server demo with example tools.
 
 ## Requirements
