@@ -43,7 +43,7 @@ if __name__ == "__main__":
 ```
 
 
-## 添加到VS code for windows
+## 添加到VS Code for Windows
 
 方式1： 在.vscode目录下创建mcp.json文件，并添加以下内容：
 
@@ -73,9 +73,22 @@ if __name__ == "__main__":
 
 方式2：通过mcp servers插件，然后命令面板（Ctrl+Shift+P）选择 "MCP: Add Server"，然后按照提示输入服务器的名称、类型、命令、参数和工作目录。
 
-## 添加到VS code for MAC
+## 添加到VS Code for MAC
 
-todo
+like, another server config.
+
+```code
+"testMcp": {
+           "command": "uv",
+           "args": [
+           "run",
+              "--project",
+              "/Users/jacktian/Desktop/AI/McpTest",
+           "python",
+           "/Users/jacktian/Desktop/AI/McpTest/main.py"
+           ]
+        }
+```
 
 ## start server
 
