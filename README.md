@@ -7,6 +7,19 @@ A minimal [FastMCP](https://github.com/jlowin/fastmcp) server demo with example 
 - Python 3.13+
 - [uv](https://docs.astral.sh/uv/)
 
+## 克隆后首次运行（避免 `mcp.server.fastmcp` 无法 resolve）
+
+拉取仓库后，如果编辑器提示 `mcp.server.fastmcp` 无法解析，通常是因为还没在当前工作区安装依赖，或 VS Code 没选中项目虚拟环境。
+
+建议按下面顺序执行：
+
+1. 在项目根目录创建并同步依赖（会根据 `pyproject.toml` 和 `uv.lock` 安装 `mcp`）：
+    - `uv sync`
+2. 在 VS Code 里选择解释器为项目下 `.venv`。
+3. 重载窗口或重启 Python Language Server。
+
+本仓库已包含 `.vscode/settings.json`，会优先指向 `${workspaceFolder}/.venv/bin/python`。
+
 ## init evn
 
 ```bash
@@ -24,6 +37,7 @@ uv add "mcp[cli]"
 ## 写MCP的具体实现
 
 1: 使用注解@mcp.tool()修饰，然后完成一个function 函数，like
+
 ```code
 @mcp.tool()
 def generate_leave_email(date: str) -> str:
@@ -35,13 +49,11 @@ def generate_leave_email(date: str) -> str:
 ```
 
 2: mcp启动方法
-```code
 
+```code
 if __name__ == "__main__":
     mcp.run()
-
 ```
-
 
 ## 添加到VS Code for Windows
 
